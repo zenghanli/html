@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  center
+    h1(style='FONT-WEIGHT: bolder; FONT-SIZE: 50px; FILTER: blur(add=1, direction=45,strength=10); WIDTH: 500px; POSITION: relative')
+    h1= title
+    p what is your name ?
+    script(type='text/javascript', src='javascripts/login.js')
+    input#ID(type='text')
+    button#helloButton(onclick='login()') Say "Hello"
+    #greetingOutput
